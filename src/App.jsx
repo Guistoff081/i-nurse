@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {  } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Contact from './components/Contact'
@@ -16,21 +16,17 @@ const themeLight = createTheme({
 	},
 })
 
-
-
 function App() {
+
 	const theme = useTheme()
 	const isMobile = useMediaQuery(theme.breakpoints.down('md'))
 
-
 	return (
 		<Router>
-			<div className="App">
-				<ThemeProvider theme={themeLight}>
-					<CssBaseline />
-					{isMobile ? (<BottomAppBar />) : (<Navbar />)}
-				</ThemeProvider>
-			</div>
+			<ThemeProvider theme={themeLight}>
+				<CssBaseline />
+				{isMobile ? (<BottomAppBar />) : (<Navbar />)}
+			</ThemeProvider>
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />

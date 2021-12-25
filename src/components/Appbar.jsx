@@ -33,6 +33,7 @@ export default function BottomAppBar() {
 	const classes = useStyles()
 
 	return (
+
 		<React.Fragment>
 			<CssBaseline />
 			<AppBar position="fixed" color="primary" className={classes.appBar}>
@@ -51,5 +52,6 @@ export default function BottomAppBar() {
 				</Toolbar>
 			</AppBar>
 		</React.Fragment>
+
 	)
 }
