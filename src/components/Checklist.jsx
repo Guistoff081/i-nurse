@@ -64,6 +64,7 @@ const Checklist = () => {
 
 	const handleChange = (newState) => (event) => {
 		setState({ [event.target.name]: event.target.checked, checkValue: event.target.value, ...newState })
+		console.log(event.target.name)
 	}
 
 	return (<React.Fragment>
@@ -82,7 +83,7 @@ const Checklist = () => {
 									control={
 										<Checkbox
 											checked={checked1A}
-											onChange={handleChange({ checkValue: 4.5, totalValue: totalValue+4.5 })}
+											onChange={handleChange({ checkValue: 4.5, totalValue: !checked1A ? totalValue+4.5 : totalValue-4.5 })}
 											name="checked1A"
 											value={checkValue}
 											color="primary"
@@ -97,7 +98,7 @@ const Checklist = () => {
 									control={
 										<Checkbox
 											checked={checked1B}
-											onChange={handleChange({ checkValue: 12.1, totalValue: totalValue+12.1 })}
+											onChange={handleChange({ checkValue: 12.1, totalValue: !checked1B ? totalValue+12.1 : totalValue-12.1 })}
 											name="checked1B"
 											value={checkValue}
 											color="primary"
@@ -127,7 +128,7 @@ const Checklist = () => {
 									control={
 										<Checkbox
 											checked={checked2}
-											onChange={handleChange({ checkValue: 4.3, totalValue: totalValue+4.3 })}
+											onChange={handleChange({ checkValue: 4.3, totalValue: !checked2 ? totalValue+4.3 : totalValue-4.3 })}
 											name="checked2"
 											value={checkValue}
 											color="primary"
