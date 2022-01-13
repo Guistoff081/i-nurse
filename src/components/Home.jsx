@@ -24,7 +24,7 @@ function HomePage() {
 	
 	return (
 		<div style={{marginBottom: '80px', marginTop: '25px'}}>
-			<Container maxWidth='xlg'>
+			<Container maxWidth='xl'>
 				<Grid container spacing={3}>
 					<Grid item xs={12}>
 						<Paper className={classes.paper}>

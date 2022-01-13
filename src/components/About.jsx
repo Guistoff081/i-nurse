@@ -26,13 +26,13 @@ function AboutPage() {
 
 	return (
 		<div style={{marginBottom: '80px', marginTop: '25px', height: '100vh'}}>
-			<Container maxWidth='xlg' >
+			<Container maxWidth='xl' >
 				<Grid 
 					container
 					spacing={3}
 					direction='column'
 					alignItems='center'
-					justify='center'
+					justifyContent='center'
 					style={{ minHeight: '100vh'}}
 
 				>

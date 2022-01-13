@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -32,6 +33,13 @@ const useStyles = makeStyles(() => ({
 export default function BottomAppBar() {
 	const classes = useStyles()
 
+	const navigate = useNavigate()
+
+	const toNewChecklist = () => {
+		let path = '/new-checklist'
+		navigate(path)
+	}
+
 	return (
 
 		<React.Fragment>
@@ -39,7 +47,7 @@ export default function BottomAppBar() {
 			<AppBar position="fixed" color="primary" className={classes.appBar}>
 				<Toolbar>
 					<DrawerComponent />
-					<Fab color="secondary" aria-label="add" className={classes.fabButton}>
+					<Fab color="secondary" aria-label="add" onClick={toNewChecklist} className={classes.fabButton}>
 						<AddIcon />
 					</Fab>
 					<div className={classes.grow} />

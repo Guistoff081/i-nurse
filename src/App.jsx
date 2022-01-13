@@ -6,6 +6,7 @@ import Home from './components/Home'
 import About from './components/About'
 import BottomAppBar from './components/Appbar'
 import Navbar from './components/Navbar'
+import Checklist from './components/Checklist'
 import { useMediaQuery, useTheme } from '@material-ui/core'
 import { ThemeProvider, createTheme } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -31,6 +32,7 @@ function App() {
 				<Route exact path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="/new-checklist" element={<Checklist />} />
 			</Routes>
 		</Router>
 	)
