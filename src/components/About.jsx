@@ -40,7 +40,7 @@ function AboutPage() {
 						<Paper className={classes.paper}>
 							<Typography variant="h4" className={classes.title}>Sobre Nós</Typography>
 							<Typography variant="body1" className={classes.text}>O i-Nursing foi desenvolvido com a proposta de ser uma solução para auxiliar no dimensionamento da carga de trabalho da equipe de enfermagem na Unidade de Terapia Intensiva pelo uso da metodologia Nursing Activities Score (NAS).</Typography>
-							<Typography variant="body1" className={classes.text}>O Aplicativo Foi idealizado por 3 acadêmicas de enfermagem com a ajuda da orientadora Claudinalle com a ajuda da orientadora Claudinalle e co-orientadora Letícia Moura Mulatinho, com o objetivo de ser implementado nas UTIs do Complexo Hospitalar - UPE.</Typography>
+							<Typography variant="body1" className={classes.text}>O Aplicativo Foi idealizado por 3 acadêmicas de enfermagem com a ajuda da orientadora Claudinalle e da co-orientadora Letícia Moura Mulatinho, com o objetivo de ser implementado nas UTIs do Complexo Hospitalar - UPE.</Typography>
 							<Typography variant="body1" className={classes.text}>O desenvolvimento desta Aplicação foi feito em conjunto pelas 3 acadêmicas e um programador voluntário</Typography>
 						</Paper>
 					</Grid>
